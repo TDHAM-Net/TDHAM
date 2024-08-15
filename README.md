@@ -27,10 +27,23 @@ These two data sets mainly contains the basic attributes of about 30 million ran
 | Habitual City | An integer, the serialized ID that represents the user habitual city，single value |
 
 ### historical_connection_profile.csv
-This data file mainly contains the basic attribute characteristics of about 270,000 products, such as product category ID, product city, product label, etc. Each row of the data set represents the information of a product, separated by commas. The detailed description of each column in the data set is as follows:e (e.g., call times, connection times, and call duration). 
+This data file mainly contains the basic attribute characteristics of about 317 features, such as Time slot, Preference label, Call times, Connection times, Connection ratio etc. Each row of the data set represents the information of a user, separated by commas. The detailed description of each column in the data set is as follows:
 | Field | Explanation |
 | --- | --- |
-| Item ID | An integer, the serialized ID that represents an item |
-| Category ID | An integer, the serialized ID that represents an item category |
-| Item City | An integer, the serialized ID that represents an item City |
-| Item Tag List | A String, the ID of each tag is separated by English semicolon after serialization |
+| User ID | An integer, the serialized ID that represents an item |
+| Time slot | An integer, enum-type from (9, 10, 11, 12, 14, 15, 16, 17) |
+| Preference label | An integer, whether user has a preference for time slot, enum-type from (0,1)  |
+| Call times 3d | An integer, The number of times the user was called in the past 3 days |
+| Call times 1m | An integer, The number of times the user was called in the past 30 days |
+| Connection times 3d | An integer, The number of times the user was answered in the past 3 days |
+| Connection times 1m | An integer, The number of times the user was answered in the past 30 days |
+| Time slot connection ratio 1m| An float, The call connection rate for the user within this time slot over the past 30 days |
+| h9 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 9 over the past 30 days |
+| h10 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 10 over the past 30 days |
+| h11 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 11 over the past 30 days |
+| h12 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 12 over the past 30 days |
+| h14 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 14 over the past 30 days |
+| h15 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 15 over the past 30 days |
+| h16 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 16 over the past 30 days |
+| h17 connection ratio 1m| An float, The call connection rate for the user within time slot is equal to 17 over the past 30 days |
+
