@@ -11,9 +11,9 @@ The data set covers all behaviors (including ID, call time, status, and log) of 
 | Field | Explanation |
 | --- | --- |
 | User ID | An integer, the serialized ID that represents a user |
-| Call time | An integer, the timestamp of the behavior |
+| Call time | An integer, the timestamp of the calling |
 | Call status | A string, enum-type from ('answer', 'unanswer') |
-| Call duration | A float, the call duration of the behavior |
+| Call duration | A float, the call duration of the calling |
 
 
 ### user_profile.csv
